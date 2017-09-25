@@ -1,3 +1,107 @@
-h1 {
-    color: red;
+body{
+    margin: 0;
+    background-color: lightgray;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.center{
+    background-color: lightgray;
+    margin: auto;
+    padding: 70px;
+    width: 100%;
+    max-width: 730px;
+}
+
+.left{
+    background-color: white;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.right{
+    float: right;
+    padding-left: 10px;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.item .right{
+    width: 33.3%;
+}
+
+.item .left{
+    width: 33.3%;
+}
+
+.item{
+    background-color: white;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px;
+}
+
+.add{
+    background-color: #598bff;
+    color: white;
+    float: right;
+    padding: 10px;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.block{
+    padding: 10px;
+    background-color: white;
+}
+
+
+input {
+    background-color: white;
+    display: block;
+    width: 75%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+br{
+    height: 0;
+}
+
+button{
+    padding: 10px;
+    box-shadow: none;
+}
+
+.label{
+    background-color: lightgrey;
+    line-height: 1;
+    padding: 7px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.count{
+    background-color: darkorange;
+    color: white;
+    border-radius: 100%;
+    margin-bottom: 0;
+}
+
+.add-buttons{
+    border-radius: 100%;
+    align-items: center;
+    color: white;
+    background-color: green;
+}
+
+.last-buttons{
+    border-radius: 10%;
+    text-align: right;
+}
+
+.red{
+    background-color: red;
 }

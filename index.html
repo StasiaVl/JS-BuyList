@@ -2,13 +2,121 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
+    <title>Vladimirska's buy list</title>
 
 
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<h1>Hello World</h1>
-<p>Hello Git</p>
+<div class="container">
+    <div class="center">
+        <div class = "right">
+            <!--    left block    -->
+            <div>
+                <div class="item">
+                    Залишилося
+                </div>
+                <div class="item">
+                    <span class="label">
+                        Молоко
+                        <span class="label count">1</span>
+                    </span>
+                    <span class="label">
+                        Печиво
+                        <span class="label count">1</span>
+                    </span>
+                    <span class="label">
+                        Какао
+                        <span class="label count">1</span>
+                    </span>
+                </div>
+            </div>
+            <!--    bought block    -->
+            <div>
+                <div class="item">
+                    Куплено
+                </div>
+                <div class="item">
+                </div>
+            </div>
+        </div>
+        <div class = "left">
+            <!--            Input line with button       -->
+            <div class="block item">
+                <button type="button" class="add">
+                    Додати
+                </button>
+                <input type="text" value="Назва товару">
+            </div>
+            <div class="item">
+                <div class="right last-buttons">
+                    <button type="button" class="last-buttons">
+                        Куплено
+                    </button>
+                    <button type="button" class="red last-buttons">
+                        х
+                    </button>
+                </div>
+                <div class="right">
+                    <button type="button" disabled class="add-buttons red">
+                        -
+                    </button>
+                    <span class="label">1</span>
+                    <button type="button" class="add-buttons">
+                        +
+                    </button>
+                </div>
+                <div class="left block">
+                    Молоко
+                </div>
+            </div>
+            <div class="item">
+                <div class="right last-buttons">
+                    <button type="button" class="last-buttons">
+                        Куплено
+                    </button>
+                    <button type="button" class="red last-buttons">
+                        х
+                    </button>
+                </div>
+                <div class="right">
+                    <button type="button" disabled class="add-buttons red">
+                        -
+                    </button>
+                    <span class="label">1</span>
+                    <button type="button" class="add-buttons">
+                        +
+                    </button>
+                </div>
+                <div class="left block">
+                    Печиво
+                </div>
+            </div>
+            <div class="item">
+                <div class="right last-buttons">
+                    <button type="button" class="last-buttons">
+                        Куплено
+                    </button>
+                    <button type="button" class="red last-buttons">
+                        х
+                    </button>
+                </div>
+                <div class="right">
+                    <button type="button" disabled class="add-buttons red">
+                        -
+                    </button>
+                    <span class="label">1</span>
+                    <button type="button" class="add-buttons">
+                        +
+                    </button>
+                </div>
+                <div class="left block">
+                    Какао
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
