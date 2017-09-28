@@ -85,6 +85,31 @@ br{
 button{
     padding: 10px;
     box-shadow: none;
+    position: relative;
+}
+
+.tool::after{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-left: -50%;
+    opacity: 0;
+    transform: scale(0.2);
+    content: attr(data-tooltip);
+    background-color: purple;
+    color: white;
+    visibility: hidden;
+    transition: all 1s ease;
+}
+.tool:hover::after{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-30px) scale(1);
 }
 
 .label{
@@ -127,7 +152,6 @@ button{
 .badge{
     position: fixed;
     left: 5%;
-    transition: all 1s ease;
     bottom: -50px;
     background-color: purple;
     width: 130px;
@@ -135,6 +159,7 @@ button{
     color: white;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
+    transition: all 1s ease;
 }
 
 .badge:hover{
