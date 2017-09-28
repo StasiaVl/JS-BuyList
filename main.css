@@ -10,30 +10,39 @@ body{
 
 .center{
     background-color: lightgray;
-    margin: auto;
-    padding: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
     width: 100%;
     max-width: 950px;
 }
 
 .left{
-    background-color: white;
+    display: inline-block;
+    padding: 10px;
     width: 60%;
     box-sizing: border-box;
 }
 
 .right{
+    display: inline-block;
     float: right;
-    padding-left: 10px;
+    padding: 10px;
     width: 40%;
     box-sizing: border-box;
 }
 
-@media (max-width: 500px) {
-
+@media (max-width: 720px) {
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
 }
 
 .item .right{
+    padding: 0;
     width: 33.3%;
 }
 
@@ -61,7 +70,6 @@ body{
     background-color: white;
 }
 
-
 input {
     background-color: white;
     display: block;
@@ -77,6 +85,43 @@ br{
 button{
     padding: 10px;
     box-shadow: none;
+}
+
+.label{
+    background-color: lightgrey;
+    line-height: 1;
+    padding: 7px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.count{
+    width: 12px;
+    height: 12px;
+    background-color: darkorange;
+    color: white;
+    border-radius: 100%;
+    margin-bottom: 0;
+}
+
+.add-buttons{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    align-items: center;
+    color: white;
+    background-color: green;
+    box-sizing: border-box;
+}
+
+.last-buttons{
+    border-radius: 10%;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.red{
+    background-color: red;
 }
 
 .badge{
@@ -116,33 +161,3 @@ p{
     }
 }
 
-.label{
-    background-color: lightgrey;
-    line-height: 1;
-    padding: 7px;
-    display: inline-block;
-    margin-bottom: 3px;
-}
-
-.count{
-    background-color: darkorange;
-    color: white;
-    border-radius: 100%;
-    margin-bottom: 0;
-}
-
-.add-buttons{
-    border-radius: 100%;
-    align-items: center;
-    color: white;
-    background-color: green;
-}
-
-.last-buttons{
-    border-radius: 10%;
-    text-align: right;
-}
-
-.red{
-    background-color: red;
-}
