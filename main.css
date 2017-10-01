@@ -84,7 +84,6 @@ br{
 
 button{
     padding: 10px;
-    box-shadow: none;
     position: relative;
 }
 
@@ -95,15 +94,16 @@ button{
     border-radius: 12px;
     padding: 10px;
     text-align: center;
-    width: auto;
+    width: 80px;
     height: auto;
-    margin-left: -50%;
+    margin-left: -40px;
     opacity: 0;
     transform: scale(0.2);
     content: attr(data-tooltip);
     background-color: purple;
     color: white;
     visibility: hidden;
+    box-sizing: border-box;
     transition: all 1s ease;
 }
 .tool:hover::after{
