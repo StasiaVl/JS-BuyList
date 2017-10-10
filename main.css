@@ -110,9 +110,12 @@ button{
 .label{
     background-color: lightgrey;
     line-height: 1;
+    margin: 3px;
+    text-align: center;
+    vertical-align: middle;
     padding: 7px;
     display: inline-block;
-    margin-bottom: 3px;
+    border-radius: 5px;
 }
 
 .count{
