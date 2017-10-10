@@ -12,36 +12,44 @@
     <div class="center">
         <div class = "left">
             <!--            Input line with button       -->
-            <div class="block item">
+            <div class="item">
                 <button type="button" class="add tool" data-tooltip="Додати новий товар">
                     Додати
                 </button>
-                <input type="text" value="Назва товару">
+                <input type="text" class ="input-text" placeholder="Назва товару">
             </div>
                         <!--            Items       -->
-            <div class="item">
-                <div class="right last-buttons">
-                    <button type="button" class="last-buttons tool" data-tooltip="Прибрати зі списку">
-                        Куплено
-                    </button>
-                    <button type="button" class="red last-buttons tool" data-tooltip="Видалити">
-                        х
-                    </button>
-                </div>
-                <div class="right">
-                    <button type="button" disabled class="add-buttons red tool" data-tooltip="Менше">
-                        -
-                    </button>
-                    <span class="label">1</span>
-                    <button type="button" class="add-buttons tool" data-tooltip="Більше">
-                        +
-                    </button>
-                </div>
-                <div class="left block">
-                    Молоко
-                </div>
+            <div class = "bl-list">
+                <div class="one-row" style="display: none">
+                <div class="item">
+                    <div class="right last-buttons">
+                        <button type="button" class="buy last-buttons tool" data-tooltip="Вже куплено">
+                            Куплено
+                        </button>
+                        <button type="button" style="display: none" class="unbuy last-buttons tool" data-tooltip="Відмітити як некуплене">
+                            Не куплено
+                        </button>
+                        <button type="button" class="remove red last-buttons tool" data-tooltip="Видалити">
+                            х
+                        </button>
+                    </div>
+                    <div class="right">
+                        <button type="button" disabled class="minus add-buttons red tool" data-tooltip="Менше">
+                            -
+                        </button>
+                        <span class="label">1</span>
+                        <button type="button" class="plus add-buttons tool" data-tooltip="Більше">
+                            +
+                        </button>
+                    </div>
+                    <div class="left">
+                        Молоко
+                    </div>
+                    <input type="text" class ="input-text" style="display: none">
+                </div></div>
             </div>
-            <div class="item">
+
+           <!-- <div class="item">
                 <div class="right last-buttons">
                     <button type="button" class="last-buttons tool" data-tooltip="Прибрати зі списку">
                         Куплено
@@ -84,7 +92,7 @@
                 <div class="left block">
                     Какао
                 </div>
-            </div>
+            </div>-->
 
 
         </div>
@@ -125,5 +133,8 @@
    <h1 class="badge-title">BuyList</h1>
     <p>Created by A.Vladimirska</p>
 </div>
+
+<script type="text/javascript" src="jquery-2.1.4.min.js">  </script>
+<script type="text/javascript" src="main.js">  </script>
 </body>
 </html>
